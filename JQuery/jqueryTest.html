@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>TestJQuery</title>
+        <link rel="stylesheet" href="../Portfolio/Dart/css/css.css">
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $(".accordion .bellows:first").addClass("active");
+            $(".accordion .accordion-content:not(:first)").hide();
+
+            $(".accordion .bellows").click(function(){
+                $(this).next(".accordion-content").slideToggle("slow")
+                .siblings(".accordion-content:visible").slideUp("slow");
+                $(this).toggleClass("active");
+                $(this).siblings(".bellows").removeClass("active");
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div class="services">
+            <h2>Services</h2>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipicing elit, set do aismod tempor acidudunt ut labore et dolore magna</h4>
+        </div>
+        <div class="accordion">
+            <div class="statistics">
+                <div class="statistics-part1 bellows">
+                    <p class="p">Statistics</p>
+                    <button><img src="Pictures/arrow_drop_down.jpg"></button>
+                </div>
+                <div class="statistics-part2 accordion-content">
+                    <img src="Pictures/Rounded Rectangle 53.jpg">
+                    <div class="statistics-text">
+                        <p>Lorern ipsum dolor sit arnet, consectetur adipelictit elit sed do ausmot tempor inciditunt
+                            ut labore et dolore magna aliqua
+                        </p>
+                        <p>quis nostrud exertitation ulamco laboris laboris nisi ut aliquip ex le comaddo consequat. Duis aute irure dolor in reprehenderit
+                            in
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="statistics">
+                <div class="statistics-part1 bellows">
+                    <p class="p1">Inbox</p>
+                    <button><img src="Pictures/arrow_drop_down.jpg"></button>
+                </div>
+                <div class="statistics-part2 accordion-content">
+                    <img src="Pictures/mailpost.jpg">
+                    <div class="statistics-text">
+                        <p>Lorern ipsum dolor sit arnet, consectetur adipelictit elit sed do ausmot tempor inciditunt
+                            ut labore et dolore magna aliqua
+                        </p>
+                        <p>quis nostrud exertitation ulamco laboris laboris nisi ut aliquip ex le comaddo consequat. Duis aute irure dolor in reprehenderit
+                            in
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="statistics">
+                <div class="statistics-part1 bellows">
+                    <p class="p2">Team</p>
+                    <button><img src="Pictures/arrow_drop_down.jpg"></button>
+                </div>
+                <div class="statistics-part2 accordion-content">
+                    <img src="Pictures/team.jpg">
+                    <div class="statistics-text">
+                        <p>Lorern ipsum dolor sit arnet, consectetur adipelictit elit sed do ausmot tempor inciditunt
+                            ut labore et dolore magna aliqua
+                        </p>
+                        <p>quis nostrud exertitation ulamco laboris laboris nisi ut aliquip ex le comaddo consequat. Duis aute irure dolor in reprehenderit
+                            in
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="statistics">
+                <div class="statistics-part1 bellows">
+                    <p class="p3">Settings</p>
+                    <button><img src="Pictures/arrow_drop_down.jpg"></button>
+                </div>
+                <div class="statistics-part2 accordion-content">
+                    <img src="Pictures/mechanism.jpg">
+                    <div class="statistics-text">
+                        <p>Lorern ipsum dolor sit arnet, consectetur adipelictit elit sed do ausmot tempor inciditunt
+                            ut labore et dolore magna aliqua
+                        </p>
+                        <p>quis nostrud exertitation ulamco laboris laboris nisi ut aliquip ex le comaddo consequat. Duis aute irure dolor in reprehenderit
+                            in
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="statistics">
+                <div class="statistics-part1 bellows">
+                    <p class="p4">Feed</p>
+                    <button><img src="Pictures/arrow_drop_down.jpg"></button>
+                </div>
+                <div class="statistics-part2 accordion-content">
+                    <img src="Pictures/feedback.jpg">
+                    <div class="statistics-text">
+                        <p>Lorern ipsum dolor sit arnet, consectetur adipelictit elit sed do ausmot tempor inciditunt
+                            ut labore et dolore magna aliqua
+                        </p>
+                        <p>quis nostrud exertitation ulamco laboris laboris nisi ut aliquip ex le comaddo consequat. Duis aute irure dolor in reprehenderit
+                            in
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>

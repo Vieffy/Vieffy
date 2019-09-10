@@ -340,7 +340,7 @@ h5 {
 }
 
 .statistics-part2 {
-    display: none;
+    display: flex;
     flex-direction: row;
 }
 
@@ -437,7 +437,6 @@ h5 {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 130px;
 }
 
 .feedback-block2 p {
@@ -691,21 +690,21 @@ footer {
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
+    width: 48%;
 }
 
 .name {
     display: flex;
     flex-direction: row;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%
 }
 
 .name input:first-child {
-    margin-right: 50px;
+    margin-right: 4%;
 }
 
 .email input:first-child {
-    margin-right: 50px;
+    margin-right: 4%;
 }
 
 .mini-container {
@@ -736,7 +735,6 @@ footer {
     margin-left: auto;
     margin-top: 20px;
     flex-wrap: wrap;
-    width: 117%;
 }
 
 .message textarea {
@@ -750,7 +748,7 @@ footer {
     margin-right: auto;
     display: block;
     margin-left: 0px;
-    padding-right: 180px;
+    width: 100%;
 }
 
 .subscribe {
@@ -759,6 +757,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    justify-content: space-between;
 }
 
 .subscribe input {
@@ -766,7 +765,6 @@ footer {
     font-size: 20px;
     font-weight: 700;
     border: 10px;
-    margin-left: 20px;
     margin-top: 7px;
 }
 
@@ -777,11 +775,9 @@ footer {
     border: 0px;
     padding: 20px 40px 20px 40px;
     margin-bottom: 100px;
-    margin-right: 20px;
 }
 
 .subscribe p {
-    margin-left: 5px;
     color: #061e37;
     font-size: 15px;
     font-weight: 600;
@@ -914,6 +910,37 @@ footer {
     background-color: unset;
 }
 
+.active {
+    display: flex;
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+  transform: translateX(0);
+
+  @supports (transform-style: preserve-3d) {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.carousel-item-next,
+.active.carousel-item-right {
+  transform: translateY(130%);
+
+  @supports (transform-style: preserve-3d) {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.carousel-item-prev,
+.active.carousel-item-left {
+  transform: translateY(-130%);
+
+  @supports (transform-style: preserve-3d) {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
 /* Модалка */
 
 .modalDialog button {
@@ -945,7 +972,7 @@ footer {
 .modalDialog > div {
     max-width: 270px;
 	position: relative;
-	margin: 10% auto;
+    margin: 23% auto;
 	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
 	background: #fff;
@@ -1055,7 +1082,7 @@ footer {
     }
 
     .message {
-        max-width: 332px;
+        width: 48%;
     }
 
     .subscribe {

@@ -4,11 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Dart</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/css.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="../JQuery/jquery-3.4.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
         <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/accordion.js"></script>
     </head>
     <body>
         <div class="backgroundMain"></div>
@@ -157,12 +161,14 @@
                 <div class="services">
                     <h2>Services</h2>
                     <h5>Lorem ipsum dolor sit amet, consectetur adipicing elit, set do aismod tempor acidudunt ut labore et dolore magna</h4>
+                </div>
+                <div class="accordion">
                     <div class="statistics">
-                        <div onclick="viewDiv()" class="statistics-part1">
+                        <div class="statistics-part1 bellows">
                             <p class="p">Statistics</p>
                             <button><img src="Pictures/arrow_drop_down.jpg"></button>
                         </div>
-                        <div id="div1" class="statistics-part2">
+                        <div class="statistics-part2 accordion-content">
                             <img src="Pictures/Rounded Rectangle 53.jpg">
                             <div class="statistics-text">
                                 <p>Lorern ipsum dolor sit arnet, consectetur adipelictit elit sed do ausmot tempor inciditunt
@@ -174,72 +180,72 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="statistics">
-                    <div  onclick="viewDiv2()" class="statistics-part1">
-                        <p class="p1">Inbox</p>
-                        <button><img src="Pictures/arrow_drop_down.jpg"></button>
-                    </div>
-                    <div id="div2" class="statistics-part2">
-                        <img src="Pictures/mailpost.jpg">
-                        <div class="statistics-text">
-                            <p>Lorern ipsum dolor sit arnet, consectetur adipelictit elit sed do ausmot tempor inciditunt
-                                ut labore et dolore magna aliqua
-                            </p>
-                            <p>quis nostrud exertitation ulamco laboris laboris nisi ut aliquip ex le comaddo consequat. Duis aute irure dolor in reprehenderit
-                                in
-                            </p>
+                    <div class="statistics">
+                        <div class="statistics-part1 bellows">
+                            <p class="p1">Inbox</p>
+                            <button><img src="Pictures/arrow_drop_down.jpg"></button>
+                        </div>
+                        <div class="statistics-part2 accordion-content">
+                            <img src="Pictures/mailpost.jpg">
+                            <div class="statistics-text">
+                                <p>Lorern ipsum dolor sit arnet, consectetur adipelictit elit sed do ausmot tempor inciditunt
+                                    ut labore et dolore magna aliqua
+                                </p>
+                                <p>quis nostrud exertitation ulamco laboris laboris nisi ut aliquip ex le comaddo consequat. Duis aute irure dolor in reprehenderit
+                                    in
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="statistics">
-                    <div  onclick="viewDiv3()" class="statistics-part1">
-                        <p class="p2">Team</p>
-                        <button><img src="Pictures/arrow_drop_down.jpg"></button>
-                    </div>
-                    <div id="div3" class="statistics-part2">
-                        <img src="Pictures/team.jpg">
-                        <div class="statistics-text">
-                            <p>Lorern ipsum dolor sit arnet, consectetur adipelictit elit sed do ausmot tempor inciditunt
-                                ut labore et dolore magna aliqua
-                            </p>
-                            <p>quis nostrud exertitation ulamco laboris laboris nisi ut aliquip ex le comaddo consequat. Duis aute irure dolor in reprehenderit
-                                in
-                            </p>
+                    <div class="statistics">
+                        <div class="statistics-part1 bellows">
+                            <p class="p2">Team</p>
+                            <button><img src="Pictures/arrow_drop_down.jpg"></button>
+                        </div>
+                        <div class="statistics-part2 accordion-content">
+                            <img src="Pictures/team.jpg">
+                            <div class="statistics-text">
+                                <p>Lorern ipsum dolor sit arnet, consectetur adipelictit elit sed do ausmot tempor inciditunt
+                                    ut labore et dolore magna aliqua
+                                </p>
+                                <p>quis nostrud exertitation ulamco laboris laboris nisi ut aliquip ex le comaddo consequat. Duis aute irure dolor in reprehenderit
+                                    in
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="statistics">
-                    <div  onclick="viewDiv4()" class="statistics-part1">
-                        <p class="p3">Settings</p>
-                        <button><img src="Pictures/arrow_drop_down.jpg"></button>
-                    </div>
-                    <div id="div4" class="statistics-part2">
-                        <img src="Pictures/mechanism.jpg">
-                        <div class="statistics-text">
-                            <p>Lorern ipsum dolor sit arnet, consectetur adipelictit elit sed do ausmot tempor inciditunt
-                                ut labore et dolore magna aliqua
-                            </p>
-                            <p>quis nostrud exertitation ulamco laboris laboris nisi ut aliquip ex le comaddo consequat. Duis aute irure dolor in reprehenderit
-                                in
-                            </p>
+                    <div class="statistics">
+                        <div class="statistics-part1 bellows">
+                            <p class="p3">Settings</p>
+                            <button><img src="Pictures/arrow_drop_down.jpg"></button>
+                        </div>
+                        <div class="statistics-part2 accordion-content">
+                            <img src="Pictures/mechanism.jpg">
+                            <div class="statistics-text">
+                                <p>Lorern ipsum dolor sit arnet, consectetur adipelictit elit sed do ausmot tempor inciditunt
+                                    ut labore et dolore magna aliqua
+                                </p>
+                                <p>quis nostrud exertitation ulamco laboris laboris nisi ut aliquip ex le comaddo consequat. Duis aute irure dolor in reprehenderit
+                                    in
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="statistics">
-                    <div  onclick="viewDiv5()" class="statistics-part1">
-                        <p class="p4">Feed</p>
-                        <button><img src="Pictures/arrow_drop_down.jpg"></button>
-                    </div>
-                    <div id="div5" class="statistics-part2">
-                        <img src="Pictures/feedback.jpg">
-                        <div class="statistics-text">
-                            <p>Lorern ipsum dolor sit arnet, consectetur adipelictit elit sed do ausmot tempor inciditunt
-                                ut labore et dolore magna aliqua
-                            </p>
-                            <p>quis nostrud exertitation ulamco laboris laboris nisi ut aliquip ex le comaddo consequat. Duis aute irure dolor in reprehenderit
-                                in
-                            </p>
+                    <div class="statistics">
+                        <div class="statistics-part1 bellows">
+                            <p class="p4">Feed</p>
+                            <button><img src="Pictures/arrow_drop_down.jpg"></button>
+                        </div>
+                        <div class="statistics-part2 accordion-content">
+                            <img src="Pictures/feedback.jpg">
+                            <div class="statistics-text">
+                                <p>Lorern ipsum dolor sit arnet, consectetur adipelictit elit sed do ausmot tempor inciditunt
+                                    ut labore et dolore magna aliqua
+                                </p>
+                                <p>quis nostrud exertitation ulamco laboris laboris nisi ut aliquip ex le comaddo consequat. Duis aute irure dolor in reprehenderit
+                                    in
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -361,60 +367,14 @@
                             <a href="#">Information</a>
                         </div>
                         <div class="footer-social">
-                                <a href="https://www.google.ru/"><img src="Pictures/f1.png"></a>
-                                <a href="https://www.google.ru/"><img src="Pictures/f2.png"></a>
-                                <a href="https://www.google.ru/"><img src="Pictures/f3.png"></a>
-                                <a href="https://www.google.ru/"><img src="Pictures/f4.png"></a>
-                                <a href="https://www.google.ru/"><img src="Pictures/f5.png"></a>
+                            <a href="https://www.google.ru/"><img src="Pictures/f1.png"></a>
+                            <a href="https://www.google.ru/"><img src="Pictures/f2.png"></a>
+                            <a href="https://www.google.ru/"><img src="Pictures/f3.png"></a>
+                            <a href="https://www.google.ru/"><img src="Pictures/f4.png"></a>
+                            <a href="https://www.google.ru/"><img src="Pictures/f5.png"></a>
                         </div>
                     </div>
                 </div>
             </footer>
-            <script>
-                function viewDiv(){
-                    if (document.getElementById("div1")) {
-                        var obj = document.getElementById("div1");
-                            if (obj.style.display != "flex") {
-                                obj.style.display = "flex";
-                            } else obj.style.display = "none"
-                    }
-                };
-
-                function viewDiv2(){
-                    if (document.getElementById("div2")) {
-                        var obj = document.getElementById("div2");
-                            if (obj.style.display != "flex") {
-                                obj.style.display = "flex";
-                            } else obj.style.display = "none"
-                    }
-                };
-
-                function viewDiv3(){
-                    if (document.getElementById("div3")) {
-                        var obj = document.getElementById("div3");
-                            if (obj.style.display != "flex") {
-                                obj.style.display = "flex";
-                            } else obj.style.display = "none"
-                    }
-                };
-
-                function viewDiv4(){
-                    if (document.getElementById("div4")) {
-                        var obj = document.getElementById("div4");
-                            if (obj.style.display != "flex") {
-                                obj.style.display = "flex";
-                            } else obj.style.display = "none"
-                    }
-                };
-
-                function viewDiv5(){
-                    if (document.getElementById("div5")) {
-                        var obj = document.getElementById("div5");
-                            if (obj.style.display != "flex") {
-                                obj.style.display = "flex";
-                            } else obj.style.display = "none"
-                    }
-                };
-            </script>
     </body>
 </html>
