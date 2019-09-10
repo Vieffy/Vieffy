@@ -233,6 +233,7 @@ h5 {
     display: flex;
     flex-direction: row;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .icons img {
@@ -247,12 +248,11 @@ h5 {
     text-align: center;
     display: flex;
     flex-direction: row;
-    max-width: 400px;
-    width: 25%;
     padding: 50px 30px 50px 35px;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
+    width: 25%;
 }
 
 .icons p {
