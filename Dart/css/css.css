@@ -769,13 +769,14 @@ footer {
     margin-top: 7px;
 }
 
-.subscribe button {
+.subscribe .send {
     background-color: #1de9b6;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     border: 0px;
-    padding: 20px 40px 20px 40px;
     margin-bottom: 100px;
+    margin-right: 0px;
+    width: 25%;
 }
 
 .subscribe p {
@@ -1090,7 +1091,7 @@ footer {
         flex-direction: column;
     }
 
-    .subscribe button {
+    .subscribe .send {
         margin-right: auto;
         margin-left: auto;
     }
@@ -1182,11 +1183,6 @@ footer {
 
     .subscribe {
         flex-direction: column;
-    }
-
-    .subscribe button {
-        margin-right: auto;
-        margin-left: auto;
     }
 
     .dissapire {
@@ -1360,6 +1356,10 @@ footer {
 
     .mini-container input {
         width: 100%;
+    }
+
+    .subscribe .send {
+        width: 30%;
     }
 
     .privacy img {

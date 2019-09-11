@@ -318,28 +318,39 @@
                         <p>Lorern ipsum dolor sit arnet, consectetur adipelictit elit sed do ausmot tempor inciditunt
                             ut labore et dolore magna
                         </p>
+                        <script> 
+
+                            $(document).ready(function() {
+
+                                $(".qwe").load("/form.php");
+
+                            });
+
+                        </script> 
                         <div class="mini-container">
-                            <div class="name">
-                                <input type="text" size="35" placeholder="First name">
-                                <input type="text" size="35" placeholder="Last name">
-                            </div>
-                            <div class="email">
-                                <input type="email" size="35" placeholder="Email">
-                                <input type="tel" size="35" placeholder="Phone">
-                            </div>
-                            <div class="message hide">
-                                    <textarea placeholder="Message" cols="67" rows="4"></textarea>
-                            </div>
-                            <div class="message wrap">
-                                    <textarea placeholder="Message" cols="28" rows="4"></textarea>
-                            </div>
-                            <div class="subscribe">
-                                <div class="subsc">
-                                    <input type="checkbox">
-                                    <p>Subscribe to the newsletter</p>
+                            <form class="qwe" action="form.php" method="post">
+                                <div class="name">
+                                    <input type="text" name="firstName" size="35" placeholder="First name" required>
+                                    <input type="text" name="lastName" size="35" placeholder="Last name" required>
                                 </div>
-                                <button>SEND</button>
-                            </div>
+                                <div class="email">
+                                    <input type="email" name="email" size="35" placeholder="Email" required>
+                                    <input type="tel"  size="35" placeholder="Phone" required>
+                                </div>
+                                <div class="message hide">
+                                        <textarea name="message" placeholder="Message" cols="67" rows="4"></textarea>
+                                </div>
+                                <div class="message wrap">
+                                        <textarea name="message" placeholder="Message" cols="28" rows="4"></textarea>
+                                </div>
+                                <div class="subscribe">
+                                    <div class="subsc">
+                                        <input type="checkbox">
+                                        <p>Subscribe to the newsletter</p>
+                                    </div>
+                                    <input class="send" type="submit" name="send" value="Send">
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
