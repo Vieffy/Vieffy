@@ -1,9 +1,9 @@
 <?php
-$firstName = $_POST['firstName'];
-$email = $_POST['email'];
-$lastName = $_POST['lastName']
-$tel = $_POST['tel']
-$message = $_POST['message']
+$firstName = $_GET['firstName'];
+$email = $_GET['email'];
+$lastName = $_GET['lastName']
+$tel = $_GET['tel']
+$message = $_GET['message']
 
 $firstName = htmlspecialchars($firstName);
 $email = htmlspecialchars($email);
