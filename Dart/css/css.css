@@ -712,6 +712,8 @@ footer {
     max-width: 620px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    min-height: 150px;
 }
 
 .email {
@@ -904,12 +906,39 @@ footer {
     background-image: none;
 }
 
+div#result_form .result-form {
+    width: 100%;
+    text-align: center;
+    background-color: rgb;
+    background-color: rgba(53, 52, 52, 0.7);
+    padding: 10px;
+    position: fixed;
+    left: 0px;
+    right: 0;
+    bottom: 100px;
+    top: 700px;
+    color: yellow;
+}
+
 .carousel-control-next {
     bottom: 203px;
     top: 14px;
     background-image: url(../Pictures/keyboard_arrow_up.png);
     background-repeat: no-repeat;
     background-color: unset;
+}
+
+.hidden {
+    display: none;
+}
+
+.preloader {
+    position: absolute;
+    margin: auto;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .active {
@@ -1387,4 +1416,21 @@ footer {
     .feedback-block2 {
         display: none;
     }
+}
+
+.show {
+    display: block;
+}
+
+.success-mail {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(217,217,244,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.success-mail p {
+    font-size: 20px;
+    padding: 20px 0px;
+    color: #00d9ff;
 }

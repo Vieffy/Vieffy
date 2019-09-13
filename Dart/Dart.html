@@ -7,12 +7,15 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/css.css">
+        <link rel="stylesheet" href="css/spinerCss.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
         <script type="text/javascript" src="../JQuery/jquery-3.4.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
         <script src="../bootstrap/js/bootstrap.min.js"></script>
         <script src="js/accordion.js"></script>
+        <script src="js/form.js"></script>
+        <script src="js/spiner.js"></script>
     </head>
     <body>
         <div class="backgroundMain"></div>
@@ -318,24 +321,15 @@
                         <p>Lorern ipsum dolor sit arnet, consectetur adipelictit elit sed do ausmot tempor inciditunt
                             ut labore et dolore magna
                         </p>
-                        <script> 
-
-                            $(document).ready(function() {
-
-                                $(".qwe").load("/form.php");
-
-                            });
-
-                        </script> 
                         <div class="mini-container">
-                            <form class="qwe" action="form.php" method="post">
+                            <form class="qwe" action="form.php" method="post" id="feedback">
                                 <div class="name">
                                     <input type="text" name="firstName" size="35" placeholder="First name" required>
                                     <input type="text" name="lastName" size="35" placeholder="Last name" required>
                                 </div>
                                 <div class="email">
                                     <input type="email" name="email" size="35" placeholder="Email" required>
-                                    <input type="tel"  size="35" placeholder="Phone" required>
+                                    <input type="tel" name="tel"  size="35" placeholder="Phone" required>
                                 </div>
                                 <div class="message hide">
                                         <textarea name="message" placeholder="Message" cols="67" rows="4"></textarea>
@@ -348,9 +342,14 @@
                                         <input type="checkbox">
                                         <p>Subscribe to the newsletter</p>
                                     </div>
-                                    <input class="send" type="submit" name="send" value="Send">
+                                    <input class="send" id="btn" type="submit" name="send" value="Send">
                                 </div>
                             </form>
+                            <div class="hidden success-mail" id="success">
+                                <p>Ваше письмо успешно отправлено</p>
+                            </div>
+                            <img id="baz" class="hidden preloader" src="Pictures/6.svg">
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -387,5 +386,10 @@
                     </div>
                 </div>
             </footer>
+            <script> 
+                $(document).ready(function() {
+                    $(".qwe").load("/form.php");
+                });
+            </script> 
     </body>
 </html>
