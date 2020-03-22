@@ -302,6 +302,38 @@ button:hover {
     background-repeat: no-repeat;
 }
 
+.extension {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.extension a {
+    text-decoration: none;
+}
+
+.extension-img {
+    display: block;
+    background-image: url(../pictures/extensions.png);
+    width: 540px;
+    height: 400px;
+    margin-top: -85px;
+    background-size: contain;
+    margin-right: 50px;
+    background-repeat: no-repeat;
+}
+
+.extension-text {
+    box-sizing: border-box;
+}
+
+.extension-text p {
+    max-width: 280px;
+}
+
 img.dividor {
     width: 100%;
 }
@@ -416,6 +448,21 @@ footer {
     }
 
     .flaby-img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .extension-img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;;
+    }
+
+    .extension {
+        flex-direction: column;
+    }
+
+    .extension-text {
         margin-left: auto;
         margin-right: auto;
     }
